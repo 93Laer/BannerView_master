@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tag_web_loaded" type="id">tag_web_loaded</item>
+    <item name="tag_bamboo" type="id">tag_bamboo</item>
+
+</resources>

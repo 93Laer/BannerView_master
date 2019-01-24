@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--广告条-->
+    <declare-styleable name="BannerView">
+        <!--时间-->
+        <attr name="interval" />
+        <!--方向-->
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <!--自动播放-->
+        <attr name="autoPlaying" format="boolean"/>
+        <!--item间的间距-->
+        <attr name="itemSpace" format="integer"/>
+        <!--中间的item和两边item的大小比例-->
+        <attr name="centerScale" format="float"/>
+        <!--手指滑动时，banner移动的的速度-->
+        <attr name="moveSpeed" format="float"/>
+        <!--数据为空时，展示的view-->
+        <attr name="empty_layout" format="reference" />
+
+    </declare-styleable>
+</resources>
