@@ -1,4 +1,4 @@
-package com.example.laitianbing.bannerview_master.banner_view.layoutmanager;
+package com.example.bannerview.banner_view.layoutmanager;
 
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView.LayoutManager;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Scroller;
 
-import com.example.laitianbing.bannerview_master.banner_view.OnPageChangeListener;
+import com.example.bannerview.banner_view.OnPageChangeListener;
 
 /**
  * Class intended to support snapping for a {@link RecyclerView}

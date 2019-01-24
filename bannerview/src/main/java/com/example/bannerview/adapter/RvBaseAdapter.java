@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2018 Beijing Chinaway Technologies Co., Ltd. All rights reserved.
  */
-package com.example.laitianbing.bannerview_master.adapter;
+package com.example.bannerview.adapter;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;

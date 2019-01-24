@@ -8,12 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.example.laitianbing.bannerview_master.adapter.ViewHolder;
-import com.example.laitianbing.bannerview_master.banner_view.BannerAdapter;
-import com.example.laitianbing.bannerview_master.banner_view.BannerView;
-import com.example.laitianbing.bannerview_master.banner_view.indicator.Indicator;
-import com.example.laitianbing.bannerview_master.banner_view.indicator.RectIndicator;
-import com.example.laitianbing.bannerview_master.banner_view.indicator.TextIndicator;
+
+import com.example.bannerview.adapter.ViewHolder;
+import com.example.bannerview.banner_view.BannerAdapter;
+import com.example.bannerview.banner_view.BannerView;
+import com.example.bannerview.banner_view.indicator.Indicator;
+import com.example.bannerview.banner_view.indicator.RectIndicator;
+import com.example.bannerview.banner_view.indicator.TextIndicator;
 
 import java.util.List;
 

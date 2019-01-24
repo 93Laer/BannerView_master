@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".BannerActivity">
 
-    <com.example.laitianbing.bannerview_master.banner_view.BannerView
+    <com.example.bannerview.banner_view.BannerView
         android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="150dp"

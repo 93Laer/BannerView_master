@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2018 Beijing Chinaway Technologies Co., Ltd. All rights reserved.
  */
-package com.example.laitianbing.bannerview_master.adapter;
+package com.example.bannerview.adapter;
 
 import android.content.Context;
 import android.support.annotation.DrawableRes;
@@ -67,7 +67,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
      */
     public ViewHolder setText(@IdRes int id, SpannableString content) {
         TextView view = getView(id);
-        view.setText(content);
+        if (null != view) {
+            view.setText(content);
+        }
         return this;
     }
 
@@ -80,7 +82,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
      */
     public ViewHolder setText(@IdRes int id, String content) {
         TextView view = getView(id);
-        view.setText(content);
+        if (null != view) {
+            view.setText(content);
+        }
         return this;
     }
 
@@ -93,46 +97,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
      */
     public ViewHolder setText(@IdRes int id, @StringRes int resId) {
         TextView view = getView(id);
-        view.setText(resId);
-        return this;
-    }
-
-    /**
-     * 设置格式化TextView的文本.
-     *
-     * @param cxt
-     * @param id       view的ID
-     * @param formatId 设置格式化资源ID
-     * @param args
-     * @return
-     */
-    public ViewHolder setFormatText(Context cxt, @IdRes int id, int formatId, Object... args) {
-        ((TextView) getView(id)).setText(cxt.getString(formatId, args));
-        return this;
-    }
-
-    /**
-     * 设置imageview.
-     *
-     * @param url 图片的URL
-     * @param id  imageview的ID
-     * @return 返回holder
-     */
-    public ViewHolder setImg(String url, @IdRes int id) {
-        ImageView view = getView(id);
-        // TODO: 2018/9/27 根据自己的图片库做图片的加载
-        return this;
-    }
-
-    /**
-     * 设置点击事件.
-     *
-     * @param id       view的ID
-     * @param listener
-     * @return
-     */
-    public ViewHolder setOnClickListener(@IdRes int id, View.OnClickListener listener) {
-        getView(id).setOnClickListener(listener);
+        if (null != view) {
+            view.setText(resId);
+        }
         return this;
     }
 

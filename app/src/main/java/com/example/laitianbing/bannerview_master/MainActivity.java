@@ -31,4 +31,8 @@ public class MainActivity extends AppCompatActivity {
     public void hasIndicatorBanner(View view) {
         BannerIndicatorActivity.start(this);
     }
+
+    public void taobaoNews(View view) {
+        BannerActivity.start(this, R.layout.taobao_news, R.layout.item_taobao_news);
+    }
 }

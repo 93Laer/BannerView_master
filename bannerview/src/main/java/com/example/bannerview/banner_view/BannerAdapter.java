@@ -1,4 +1,4 @@
-package com.example.laitianbing.bannerview_master.banner_view;
+package com.example.bannerview.banner_view;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;
@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
 
-import com.example.laitianbing.bannerview_master.adapter.ViewHolder;
+import com.example.bannerview.adapter.ViewHolder;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

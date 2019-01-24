@@ -1,4 +1,4 @@
-package com.example.laitianbing.bannerview_master.banner_view.layoutmanager;
+package com.example.bannerview.banner_view.layoutmanager;
 
 import android.content.Context;
 import android.os.Parcel;
@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 
-import com.example.laitianbing.bannerview_master.banner_view.OnPageChangeListener;
+import com.example.bannerview.banner_view.OnPageChangeListener;
 
 import java.util.ArrayList;
 
@@ -89,7 +89,7 @@ public  class BannerLayoutManager extends RecyclerView.LayoutManager {
      * When LayoutManager needs to scroll to a position, it sets this variable and requests a
      * layout which will check this variable and re-layout accordingly.
      */
-    private int mPendingScrollPosition = NO_POSITION;
+    private int mPendingScrollPosition = RecyclerView.NO_POSITION;
 
     private SavedState mPendingSavedState = null;
 
@@ -430,7 +430,7 @@ public  class BannerLayoutManager extends RecyclerView.LayoutManager {
             mOffset = mPendingSavedState.offset;
         }
 
-        if (mPendingScrollPosition != NO_POSITION) {
+        if (mPendingScrollPosition != RecyclerView.NO_POSITION) {
             mOffset = mShouldReverseLayout ?
                     mPendingScrollPosition * -mInterval : mPendingScrollPosition * mInterval;
         }
@@ -451,7 +451,7 @@ public  class BannerLayoutManager extends RecyclerView.LayoutManager {
     public void onLayoutCompleted(RecyclerView.State state) {
         super.onLayoutCompleted(state);
         mPendingSavedState = null;
-        mPendingScrollPosition = NO_POSITION;
+        mPendingScrollPosition = RecyclerView.NO_POSITION;
     }
 
     @Override

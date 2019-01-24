@@ -4,24 +4,21 @@ package com.example.laitianbing.bannerview_master;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.laitianbing.bannerview_master.adapter.ViewHolder;
-import com.example.laitianbing.bannerview_master.banner_view.BannerAdapter;
-import com.example.laitianbing.bannerview_master.banner_view.BannerView;
-import com.example.laitianbing.bannerview_master.banner_view.indicator.Indicator;
+
+import com.example.bannerview.adapter.ViewHolder;
+import com.example.bannerview.banner_view.BannerAdapter;
+import com.example.bannerview.banner_view.BannerView;
 
 import java.util.List;
-import java.util.Random;
 
 public class BannerActivity extends AppCompatActivity {
     private static final String EXTRA_LAYOUT_RES = "layout_res";
     private static final String EXTRA_ITEM_LAYOUT_RES = "item_layout_res";
-    private static final String EXTRA_HAS_INDICATOR = "has_indicator";
     private BannerAdapter<Item> mAdapter;
     private BannerView mBanner;
 

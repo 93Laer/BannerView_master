@@ -1,7 +1,7 @@
-package com.example.laitianbing.bannerview_master.banner_view.indicator;
+package com.example.bannerview.banner_view.indicator;
 
 
-import com.example.laitianbing.bannerview_master.banner_view.OnPageChangeListener;
+import com.example.bannerview.banner_view.OnPageChangeListener;
 
 public interface Indicator extends OnPageChangeListener {
     /**

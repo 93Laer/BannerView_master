@@ -1,4 +1,4 @@
-package com.example.laitianbing.bannerview_master.banner_view;
+package com.example.bannerview.banner_view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,10 +17,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
-import com.example.laitianbing.bannerview_master.R;
-import com.example.laitianbing.bannerview_master.banner_view.indicator.Indicator;
-import com.example.laitianbing.bannerview_master.banner_view.layoutmanager.BannerLayoutManager;
-import com.example.laitianbing.bannerview_master.banner_view.layoutmanager.CenterSnapHelper;
+import com.example.bannerview.R;
+import com.example.bannerview.banner_view.indicator.Indicator;
+import com.example.bannerview.banner_view.layoutmanager.BannerLayoutManager;
+import com.example.bannerview.banner_view.layoutmanager.CenterSnapHelper;
 
 import java.util.ArrayList;
 import java.util.List;

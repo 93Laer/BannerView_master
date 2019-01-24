@@ -1,4 +1,4 @@
-package com.example.laitianbing.bannerview_master.banner_view.indicator;
+package com.example.bannerview.banner_view.indicator;
 
 import android.content.Context;
 import android.graphics.Canvas;

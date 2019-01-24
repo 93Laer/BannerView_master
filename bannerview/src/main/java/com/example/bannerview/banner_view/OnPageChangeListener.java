@@ -1,4 +1,4 @@
-package com.example.laitianbing.bannerview_master.banner_view;
+package com.example.bannerview.banner_view;
 
 import android.support.v7.widget.RecyclerView;
 

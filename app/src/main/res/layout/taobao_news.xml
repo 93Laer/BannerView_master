@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0EB"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_taobao"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:maxLength="4"
+        android:maxLines="2"
+        android:text="淘宝头条"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp" />
+
+    <com.example.bannerview.banner_view.BannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/tv_taobao"
+        android:layout_alignTop="@id/tv_taobao"
+        android:layout_toRightOf="@id/tv_taobao"
+        android:background="@android:color/white"
+        app:autoPlaying="true"
+        app:interval="2000"
+        app:empty_layout="@layout/empty_view"
+        app:itemSpace="20"
+        app:orientation="vertical" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:onClick="refreshDatas"
+        android:text="刷新数据" />
+</RelativeLayout>
