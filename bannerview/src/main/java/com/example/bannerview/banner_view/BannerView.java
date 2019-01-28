@@ -9,6 +9,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -102,7 +103,7 @@ public class BannerView extends RelativeLayout implements OnPageChangeListener {
         mItemSpace = a.getInt(R.styleable.BannerView_itemSpace, 0);
         mCenterScale = a.getFloat(R.styleable.BannerView_centerScale, 1.0f);
         mMoveSpeed = a.getFloat(R.styleable.BannerView_moveSpeed, 1.0f);
-        mEmptyResId = a.getLayoutDimension(R.styleable.BannerView_empty_layout, 0);
+        mEmptyResId = a.getResourceId(R.styleable.BannerView_empty_layout, 0);
         int o = a.getInt(R.styleable.BannerView_orientation, OrientationHelper.HORIZONTAL);
         a.recycle();
         //轮播图部分
@@ -291,10 +292,10 @@ public class BannerView extends RelativeLayout implements OnPageChangeListener {
                 textView.setTextSize(DEF_TEXT_SIZE);
                 textView.setTextColor(ContextCompat.getColor(getContext(), android.R.color.black));
                 textView.setText(NO_DATA);
+                textView.setGravity(Gravity.CENTER);
                 emptyView = textView;
             }
-            LayoutParams params = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.addRule(CENTER_IN_PARENT);
+            LayoutParams params = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             emptyView.setLayoutParams(params);
             addView(emptyView);
             mEmptyView = emptyView;
