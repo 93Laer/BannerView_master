@@ -56,8 +56,8 @@ allprojects {
 ```
 ```
 dependencies {
-            //在module的gradle中添加依赖
-	        implementation 'com.github.93Laer:BannerView_master:v1.0.1'
+            //在module的gradle中添加依赖,注意将“LatestRelease”换成具体的版本号，建议使用最新版本号
+	        implementation 'com.github.93Laer:BannerView_master:LatestRelease'
 	}
 
 ```
