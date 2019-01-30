@@ -16,8 +16,6 @@ import com.example.bannerview.banner_view.OnPageChangeListener;
 
 import java.util.ArrayList;
 
-import static android.support.v7.widget.RecyclerView.NO_POSITION;
-
 /**
  * An implementation of {@link RecyclerView.LayoutManager} which behaves like view pager.
  * Please make sure your child view have the same size.

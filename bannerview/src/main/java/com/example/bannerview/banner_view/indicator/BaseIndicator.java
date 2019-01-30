@@ -110,6 +110,9 @@ public abstract class BaseIndicator extends View implements Indicator {
 
     @Override
     public void onPageSelected(int index) {
+        if (mCurrentIndex == index) {
+            return;
+        }
         mCurrentIndex = index;
         if (mHorizontal) {
             mOffset = (mItemMargin + mIndicatorWidth) * index;

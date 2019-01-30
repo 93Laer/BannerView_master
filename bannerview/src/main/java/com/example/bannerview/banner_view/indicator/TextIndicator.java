@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 
 /**
  * 文本指示器，继承自TextView.所以设置文字大小，背景，字体颜色等均和TextView一样
- *
+ * <p>
  * 赖天兵
  * 简书：https://www.jianshu.com/u/2229fd214880
  * github:https://github.com/93Laer/RVAdapter-master
@@ -29,10 +29,12 @@ public class TextIndicator extends android.support.v7.widget.AppCompatTextView i
     private int mPaddingH, mPaddingV;
     //背景颜色.
     private int mBgColor;
+    //当前显示的pager Index
+    protected int mCurrentIndex;
 
     /**
      * @param context
-     * @param bgColor     背景颜色.
+     * @param bgColor 背景颜色.
      */
     public TextIndicator(Context context, int bgColor) {
         super(context);
@@ -109,6 +111,10 @@ public class TextIndicator extends android.support.v7.widget.AppCompatTextView i
     @SuppressLint("DefaultLocale")
     @Override
     public void onPageSelected(int index) {
+        if (mCurrentIndex == index) {
+            return;
+        }
+        mCurrentIndex = index;
         int bgColor = mBgColor;
         CircleDrawable drawable = mDrawable;
         String content = String.format(FORMAT_CONTENT, index + 1, mPagerSize);

@@ -42,7 +42,7 @@ public class CenterSnapHelper extends RecyclerView.OnFlingListener {
                     final OnPageChangeListener onPageChangeListener =
                             layoutManager.onPageChangeListener;
                     if (onPageChangeListener != null) {
-                        onPageChangeListener.onScrollStateChanged(recyclerView,newState);
+                        onPageChangeListener.onScrollStateChanged(recyclerView, newState);
                     }
 
                     if (newState == RecyclerView.SCROLL_STATE_IDLE && mScrolled) {
@@ -60,6 +60,13 @@ public class CenterSnapHelper extends RecyclerView.OnFlingListener {
                 public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                     if (dx != 0 || dy != 0) {
                         mScrolled = true;
+                    }
+                    BannerLayoutManager layoutManager = (BannerLayoutManager) recyclerView.getLayoutManager();
+                    if (null != layoutManager) {
+                        OnPageChangeListener onPageChangeListener = layoutManager.onPageChangeListener;
+                        if (null != onPageChangeListener) {
+                            onPageChangeListener.onPageSelected(layoutManager.getCurrentPosition());
+                        }
                     }
                 }
             };
