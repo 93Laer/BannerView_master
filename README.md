@@ -123,4 +123,6 @@ dependencies {
 > - 4、如果项目中要实现想淘宝，京东的头条那种垂直滚动，使用该框架就可以轻松完成
 
 
-### 博客链接：[支持横向、竖向无限滚动和自定义指示器的广告条BannerView和淘宝头条效果](https://www.jianshu.com/p/c700ddb0a859)
+### 博客链接：
+> [简书·支持横向、竖向无限滚动和自定义指示器的广告条BannerView和淘宝头条效果](https://www.jianshu.com/p/c700ddb0a859)
+> [掘金·支持横向、竖向无限滚动和自定义指示器的广告条BannerView和淘宝头条效果](https://juejin.im/post/5c498ad66fb9a049b3485699)
