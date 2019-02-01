@@ -125,4 +125,5 @@ dependencies {
 
 ### 博客链接：
 > [简书·支持横向、竖向无限滚动和自定义指示器的广告条BannerView和淘宝头条效果](https://www.jianshu.com/p/c700ddb0a859)
+
 > [掘金·支持横向、竖向无限滚动和自定义指示器的广告条BannerView和淘宝头条效果](https://juejin.im/post/5c498ad66fb9a049b3485699)
